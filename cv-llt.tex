@@ -55,6 +55,8 @@
   \usepackage[varqu,varl,scale=0.9]{zi4}
 \fi
 
+\usepackage{hyperref}
+
 % Change the page margins if you want
 %Uncomment for 3 pages
 % \geometry{left=1cm,right=0.9cm,top=1.2cm,bottom=1cm}
@@ -67,8 +69,9 @@
 % \prefixmarker{$\diamond$}
 
 %% Photo is only shown if "fullonly" is included
-\includecomment{fullonly}
-% \excludecomment{fullonly}
+% \includecomment{fullonly}
+\excludecomment{fullonly}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -79,14 +82,21 @@
    {\LARGE\bfseries\sffamily Alicia Garrido Peña, Ph.D. Candidate}
 
     \makefield{\faEnvelope[regular]}{\href{mailto:alicia.garrido@uam.es}{\texttt{alicia.garrido@uam.es}}}
-    \makefield{\faTwitter}{\href{https://twitter.com/aligarpe}{\texttt{@aligarpe}} }
+    % \makefield{\faTwitter}{\href{https://twitter.com/aligarpe}{\texttt{@aligarpe}} }
 
 %   %% Next line
-   \makefield{\faGlobe}{\href{https://github.com/aligarpe/}{github.com/aligarpe/}}
+   \makefield{\faGithub}{\href{https://github.com/agarpe/}{github.com/agarpe/}}
+   
+   \makefield{\faResearchgate}{\href{https://www.researchgate.net/profile/Alicia-Garrido-Pena}{researchgate.net/profile/Alicia-Garrido-Pena}}
 
 %   % You can use a tabular here if you want to line up the fields.
 	
  }
+ \rightheader{~}
+\begin{fullonly}
+\photo[r]{photo}
+\photoscale{0.20}
+\end{fullonly}
  
 \title{Curriculum Vitae}
 
@@ -99,6 +109,7 @@
 % \makerubric{employment}
 \vspace{-20pt}
 \makerubric{skills}
+\clearpage
 
 % If you're not a researcher nor an academic, you probably don't have any publications; delete this line.
 %% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own and use \input NOT \makerubric
