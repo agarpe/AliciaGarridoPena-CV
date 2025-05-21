@@ -13,7 +13,7 @@
 
 
 % Default biblatex style used for the publication list is APA6. If you wish to use a different style or pass other options to biblatex you can change them here. 
-\PassOptionsToPackage{style=ieee,sorting=ydnt,uniquename=init,defernumbers=true}{biblatex}
+\PassOptionsToPackage{style=ieee,sorting=ydnt,uniquename=init,defernumbers=true,url=false}{biblatex}
 
 % Most commands and style definitions are in settings.sty.
 \usepackage{settings}
@@ -22,10 +22,6 @@
 \DefineBibliographyStrings{english}{url={\textsc{url}}}
 
 %% Only needed if you want a Publication List
-% \addbibresource{own-bib.bib}
-
-% \addbibresource{my_publications.bib}
-% \addbibresource{My Publications.bib}
 \addbibresource{references.bib}
 %% Specify your last name(s) and first name(s) (as given in the .bib) to automatically bold your own name in the publications list. 
 %% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
@@ -104,7 +100,7 @@
  \makeheaders[c]
 % \makerubric{application}
 \makerubric{details}
-\vspace{-10pt}
+\vspace{-15pt}
 \makerubric{education}
 % \makerubric{employment}
 \vspace{-20pt}
